@@ -14,7 +14,10 @@ public class GameController : MonoBehaviour
     public BoxCollider2D TapCollider;
     public string levelName;
     [SerializeField] private GameObject _panel;
+    [SerializeField] private GameObject _losepanel;
+    [SerializeField] private GameObject _commonpanel;
     [SerializeField] private Text _statusInfo;
+    [SerializeField] private Text _LevelLabel;
     [SerializeField] private GameObject _camera;
 
     private bool _isGameEnded = false;
@@ -46,7 +49,9 @@ public class GameController : MonoBehaviour
         if (_isGameEnded)
         {
             _statusInfo.text = "You Win!";
+            _LevelLabel.text = levelName;
             _panel.gameObject.SetActive(true);
+            _commonpanel.gameObject.SetActive(true);
         }
 
         Birds.RemoveAt(0);
@@ -55,7 +60,9 @@ public class GameController : MonoBehaviour
         if (Birds.Count == 0 && Enemies.Count > 0)
         {
             _statusInfo.text = "You Lose!";
-            _panel.gameObject.SetActive(true);
+            _LevelLabel.text = levelName;
+            _losepanel.gameObject.SetActive(true);
+            _commonpanel.gameObject.SetActive(true);
         }
 
         if (Birds.Count > 0)
