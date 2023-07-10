@@ -33,10 +33,10 @@ public class Enemy : MonoBehaviour
             //Hitung damage yang diperoleh
             float damage = col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * 10;
             Health -= damage;
-
             if (Health <= 0)
             {
                 _isHit = true;
+                AudioManager.instance.Play("PigDestroy");
                 Destroy(gameObject);
             }
         }

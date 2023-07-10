@@ -44,6 +44,8 @@ public class SlingShooter : MonoBehaviour
 
     void OnMouseDrag()
     {
+        AudioManager.instance.Play("Sling");
+
         // Mengubah posisi mouse ke world position
         Vector2 p = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 

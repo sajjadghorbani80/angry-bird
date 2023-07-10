@@ -29,6 +29,8 @@ public class GameController : MonoBehaviour
             Birds[i].OnBirdDestroyed += ChangeBird;
             Birds[i].OnBirdShot += AssignTrail;
         }
+        AudioManager.instance.Play("PigLaugh");
+
 
         for (int i = 0; i < Enemies.Count; i++)
         {
@@ -87,6 +89,7 @@ public class GameController : MonoBehaviour
                 Enemies.RemoveAt(i);
                 break;
             }
+
         }
 
         if (Enemies.Count == 0)

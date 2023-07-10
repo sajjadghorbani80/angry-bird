@@ -74,6 +74,7 @@ public class Bird : MonoBehaviour
     // Melemparkan burung dengan arah, jarak tali yang ditarik, dan kecepatan awal
     public void Shoot(Vector2 velocity, float distance, float speed)
     {
+        AudioManager.instance.Play("RedBirdFlying");
         Collider.enabled = true;
         RigidBody.bodyType = RigidbodyType2D.Dynamic;
         RigidBody.velocity = velocity * speed * distance;

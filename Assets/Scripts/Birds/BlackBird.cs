@@ -19,14 +19,13 @@ public class BlackBird : Bird
             Destroy(ExplosionEffectIns, 10);
 
             Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, fieldOfImpact, LayerToHit);
-        
+
             foreach (Collider2D obj in objects)
             {
                 Vector2 direction = obj.transform.position - transform.position;
-
                 obj.GetComponent<Rigidbody2D>().AddForce(direction * force);
             }
-            
+
         }
 
     }
