@@ -13,4 +13,5 @@ public class MenuEvents : MonoBehaviour
         mixer.SetFloat("volume", VolumeSlider.value);
 
     }
+
 }
