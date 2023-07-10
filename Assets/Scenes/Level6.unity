@@ -6498,28 +6498,28 @@ MonoBehaviour:
   sounds:
   - name: RedBirdFlying
     clip: {fileID: 8300000, guid: fabc2723248b74c7f973d46d2f2b79d7, type: 3}
-    mixer: {fileID: 0}
+    mixer: {fileID: 24300002, guid: 93af0e3784e854a959b76d12328dc47a, type: 2}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Sling
     clip: {fileID: 8300000, guid: 316fd508a5a2a40059775de9ea8bf8e5, type: 3}
-    mixer: {fileID: 0}
+    mixer: {fileID: 24300002, guid: 93af0e3784e854a959b76d12328dc47a, type: 2}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: PigLaugh
     clip: {fileID: 8300000, guid: 220d55c8379c74bb0bc8ef3919244134, type: 3}
-    mixer: {fileID: 0}
+    mixer: {fileID: 24300002, guid: 93af0e3784e854a959b76d12328dc47a, type: 2}
     volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: PigDestroy
     clip: {fileID: 8300000, guid: 924c74c0fe6d14c479c7e0cc8bf8e973, type: 3}
-    mixer: {fileID: 0}
+    mixer: {fileID: 24300002, guid: 93af0e3784e854a959b76d12328dc47a, type: 2}
     volume: 0.5
     pitch: 1
     loop: 0
