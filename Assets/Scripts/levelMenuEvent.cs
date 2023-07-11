@@ -13,12 +13,22 @@ public class levelMenuEvent : MonoBehaviour
     private float value;
     private void Start()
     {
-        mixer.GetFloat("volume", out value);
-        volumeSlider.value = value;
+        if (PlayerPrefs.HasKey("volume"))
+        {
+            // set the mixer volume levels based on the saved player prefs
+            mixer.SetFloat("volume", PlayerPrefs.GetFloat("volume"));
+            volumeSlider.value = value;
+        }
+        // otherwise just set the sliders
+        else
+        {
+            volumeSlider.value = value;
+        }
     }
     public void SetVolume()
     {
         mixer.SetFloat("volume", volumeSlider.value);
+        PlayerPrefs.SetFloat("volume", volumeSlider.value);
     }
     public void LoadLevel(int levelIndex)
     {
