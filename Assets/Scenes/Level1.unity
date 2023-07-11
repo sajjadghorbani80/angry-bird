@@ -391,28 +391,28 @@ MonoBehaviour:
   sounds:
   - name: RedBirdFlying
     clip: {fileID: 8300000, guid: fabc2723248b74c7f973d46d2f2b79d7, type: 3}
-    mixer: {fileID: 0}
+    mixer: {fileID: 24300002, guid: cce274e177c11437abcbfc4c04eb9d0c, type: 2}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Sling
     clip: {fileID: 8300000, guid: 316fd508a5a2a40059775de9ea8bf8e5, type: 3}
-    mixer: {fileID: 0}
+    mixer: {fileID: 24300002, guid: cce274e177c11437abcbfc4c04eb9d0c, type: 2}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: PigLaugh
     clip: {fileID: 8300000, guid: 220d55c8379c74bb0bc8ef3919244134, type: 3}
-    mixer: {fileID: 0}
+    mixer: {fileID: 24300002, guid: cce274e177c11437abcbfc4c04eb9d0c, type: 2}
     volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: PigDestroy
     clip: {fileID: 8300000, guid: 924c74c0fe6d14c479c7e0cc8bf8e973, type: 3}
-    mixer: {fileID: 0}
+    mixer: {fileID: 24300002, guid: cce274e177c11437abcbfc4c04eb9d0c, type: 2}
     volume: 0.5
     pitch: 1
     loop: 0
@@ -2885,6 +2885,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57ab73b80f50443a227f3cb3bdfff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 0}
+  mixer: {fileID: 0}
 --- !u!1 &1444262915
 GameObject:
   m_ObjectHideFlags: 0
